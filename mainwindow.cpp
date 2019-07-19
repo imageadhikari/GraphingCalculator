@@ -29,3 +29,11 @@ void MainWindow::on_pushButton_2_clicked()
     this->hide();
     converter->show();
 }
+
+
+void MainWindow::on_calcOpen_clicked()
+{
+    calc = new Calculator(this);
+    this->hide();
+    calc->show();
+}

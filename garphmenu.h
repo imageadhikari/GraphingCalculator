@@ -32,7 +32,7 @@ private slots:
 
 private:
     Ui::GarphMenu *ui;
-    Graphs* graph;
+    Graphs *graph;
 };
 
 #endif // GARPHMENU_H

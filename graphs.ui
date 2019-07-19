@@ -32,7 +32,7 @@
      <rect>
       <x>50</x>
       <y>0</y>
-      <width>271</width>
+      <width>411</width>
       <height>61</height>
      </rect>
     </property>
@@ -128,14 +128,19 @@
    <widget class="QPushButton" name="backButton">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>700</x>
       <y>50</y>
       <width>93</width>
-      <height>28</height>
+      <height>61</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>Back</string>
+     <string>&lt;-</string>
     </property>
    </widget>
   </widget>

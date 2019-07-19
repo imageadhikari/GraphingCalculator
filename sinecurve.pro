@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        calculator.cpp \
         converter.cpp \
         garphmenu.cpp \
         graphs.cpp \
@@ -33,6 +34,7 @@ SOURCES += \
         qcustomplot.cpp
 
 HEADERS += \
+        calculator.h \
         converter.h \
         garphmenu.h \
         graphs.h \
@@ -40,6 +42,7 @@ HEADERS += \
         qcustomplot.h
 
 FORMS += \
+        calculator.ui \
         converter.ui \
         garphmenu.ui \
         graphs.ui \
