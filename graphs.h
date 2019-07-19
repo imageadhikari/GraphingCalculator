@@ -12,7 +12,7 @@ class Graphs : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit Graphs(QWidget *parent = nullptr);
+    explicit Graphs(QWidget *parent = nullptr, QString curve="sin");
     ~Graphs();
 
 private slots:
@@ -32,7 +32,11 @@ private:
     double multiplier;
     double angleTimes;
 
+    QString curveType;
+
     void showGraph();
+
+    double getFunctionValue(double finalTheta);
 };
 
 #endif // GRAPHS_H

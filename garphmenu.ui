@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Sin(x)</string>
+     <string>Cos(x)</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
@@ -50,7 +50,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Sin(x)</string>
+     <string>Tan(x)</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
@@ -63,7 +63,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Sin(x)</string>
+     <string>Sec(x)</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
@@ -76,7 +76,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Sin(x)</string>
+     <string>Cot(x)</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
@@ -89,7 +89,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Sin(x)</string>
+     <string>Cosec(x)</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">

@@ -1,7 +1,7 @@
 #include "graphs.h"
 #include "ui_graphs.h"
 
-Graphs::Graphs(QWidget *parent) :
+Graphs::Graphs(QWidget *parent,QString curve) :
     QMainWindow(parent),
     ui(new Ui::Graphs)
 {
@@ -9,6 +9,10 @@ Graphs::Graphs(QWidget *parent) :
     phase = 0;
     multiplier = 1;
     angleTimes = 1;
+
+    QString titleFormula = "y=A"+curve+"(Ax+b)";
+    ui->formula->setText(titleFormula);
+    this->curveType = curve;
     showGraph();
 }
 
@@ -45,7 +49,7 @@ void Graphs::showGraph(){
       x[i] = i; // x goes from -1 to 1
       double finalAngle = angleTimes * double(i) + phase;
       double rad = qDegreesToRadians(finalAngle);
-      y[i] = multiplier * qSin(rad); // let's plot a quadratic function
+      y[i] = multiplier * getFunctionValue(rad); // let's plot a quadratic function
     }
 
     // create graph and assign data to it:
@@ -62,7 +66,24 @@ void Graphs::showGraph(){
 
 void Graphs::on_backButton_clicked()
 {
-//    this->close();
-//    QWidget *parent = this->parentWidget();
-//    parent->show();
+    this->close();
+    QWidget *parent = this->parentWidget();
+    parent->show();
+}
+
+double Graphs::getFunctionValue(double finalTheta){
+    if(curveType == "sin"){
+        return  qSin(finalTheta);
+    }else if (curveType == "cos") {
+        return  qCos(finalTheta);
+    }else if (curveType == "tan"){
+        return  qTan(finalTheta);
+    }else if(curveType == "sec"){
+        return  1/qCos(finalTheta);
+    }else if(curveType == "cot"){
+        return  1/qTan(finalTheta);
+    }else if(curveType == "cosec"){
+        return  1/qSin(finalTheta);
+    }
+    return  qSin(finalTheta);
 }

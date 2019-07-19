@@ -27,7 +27,7 @@
      <string>A</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="formula">
     <property name="geometry">
      <rect>
       <x>50</x>

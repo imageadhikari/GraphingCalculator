@@ -18,7 +18,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     //show sine graph
-    graphMenu = new GarphMenu();
+    graphMenu = new GarphMenu(this);
     this->hide();
     graphMenu->show();
 }
