@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include<graphs.h>
+#include<garphmenu.h>
+#include<converter.h>
 
 namespace Ui {
 class MainWindow;
@@ -17,33 +18,16 @@ public:
     ~MainWindow();
 
 private slots:
-    void MakePlot();
-
-    void on_aButton_clicked();
-
-    void on_nButton_clicked();
-
-
-    void on_bButton_clicked();
-
-    void on_multiplierSpin_valueChanged(int arg1);
-
-    void on_angletimesSpin_valueChanged(int arg1);
-
-    void on_phaseSpin_valueChanged(int arg1);
 
     void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
 
-    Graphs* graph;
-
-    double phase;
-    double multiplier;
-    double angleTimes;
-
-    void showGraph();
+    GarphMenu* graphMenu;
+    Converter* converter;
 };
 
 #endif // MAINWINDOW_H

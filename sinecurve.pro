@@ -25,17 +25,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        converter.cpp \
+        garphmenu.cpp \
         graphs.cpp \
         main.cpp \
         mainwindow.cpp \
         qcustomplot.cpp
 
 HEADERS += \
+        converter.h \
+        garphmenu.h \
         graphs.h \
         mainwindow.h \
         qcustomplot.h
 
 FORMS += \
+        converter.ui \
+        garphmenu.ui \
         graphs.ui \
         mainwindow.ui
 
